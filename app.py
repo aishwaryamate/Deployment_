@@ -24,7 +24,7 @@ def main():
     age = st.number_input('Age', min_value= 0 , max_value=100)
     gender = st.selectbox('Gender', ('male','female'))
     bmi = st.number_input('BMI')
-    smoker = st.selectbox('Smoker',('Yes','NO'))
+    smoker = st.selectbox('Smoker',('Yes','No'))
     if st.button('Predict'):
         result = predict(age,gender,bmi,smoker)
         st.success('The claim is : ${} '.format(result))                          
